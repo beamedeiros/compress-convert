@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <compress-image/>
+    <br/>
+    <compress-and-convert/>
+    <br/>
+    <convert-image/>
+    <br/>
+    <image-quality/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CompressImage from './components/CompressImage.vue';
+import CompressAndConvert from './components/CompressAndConvert.vue';
+import ConvertImage from './components/ConvertImage.vue'
+import ImageQuality from './components/ConvertImageQuality.vue'
 export default {
-  name: 'App',
+  name:'App',
   components: {
-    HelloWorld
+    CompressImage,
+    CompressAndConvert,
+    ConvertImage,
+    ImageQuality
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
